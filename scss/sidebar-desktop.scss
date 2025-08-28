@@ -31,14 +31,14 @@ body.has-sidebar-page {
 /* Minimal, reliable right gap for main panel */
 body.has-sidebar-page #main-outlet {
   box-sizing: border-box;
-  // margin-right: 8px; /* mirror the left padding already used */
+  margin-right: 8px; /* mirror the left padding already used */
 }
 
 /* If the hamburger toggles a different body class when sidebar is hidden,
    add the inverse selector so the right gap still applies. */
 body:not(.has-sidebar-page) #main-outlet {
   box-sizing: border-box;
-  // margin-right: 8px;
+  margin-right: 8px;
 }
 
 /* optional: keep smaller values on very small screens */
@@ -56,11 +56,11 @@ body:not(.has-sidebar-page) #main-outlet {
 @media screen and (min-width: 1120px) {
   /* Add breathing room on the right so #main-outlet isn't flush to the screen edge */
   #main-outlet-wrapper {
-    padding-right: 2rem;
+    // padding-right: 2rem;
   }
 
   /* If you use a full-width chat layout, give a bit less padding there */
   .has-full-page-chat #main-outlet.wrap {
-    padding-right: 1rem;
+    // padding-right: 1rem;
   }
 }
