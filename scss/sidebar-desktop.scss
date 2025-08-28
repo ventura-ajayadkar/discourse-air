@@ -21,6 +21,7 @@
 body.has-sidebar-page {
   #main-outlet-wrapper {
     padding-left: 8px;
+    padding-right: 8px; /* mirror left padding so main content isn't flush on right */
   }
 
   #main-outlet {
