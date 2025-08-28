@@ -71,7 +71,7 @@ html body.user-notifications-page #main-outlet,
 html body.user-badges-page #main-outlet,
 html body.staff:not(.navigation-topics) #main-outlet {
   border-radius: 0;
-  width: calc(100% - 3em);
+  width: calc(100%);
   background-color: var(--secondary);
   margin-bottom: 0;
 }
