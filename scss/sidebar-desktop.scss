@@ -31,14 +31,14 @@ body.has-sidebar-page {
 /* Minimal, reliable right gap for main panel */
 body.has-sidebar-page #main-outlet {
   box-sizing: border-box;
-  margin-right: 8px; /* mirror the left padding already used */
+  // margin-right: 8px; /* mirror the left padding already used */
 }
 
 /* If the hamburger toggles a different body class when sidebar is hidden,
    add the inverse selector so the right gap still applies. */
 body:not(.has-sidebar-page) #main-outlet {
   box-sizing: border-box;
-  margin-right: 8px;
+  // margin-right: 8px;
 }
 
 /* optional: keep smaller values on very small screens */
