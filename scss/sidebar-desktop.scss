@@ -38,14 +38,14 @@ body.has-sidebar-page #main-outlet {
    add the inverse selector so the right gap still applies. */
 body:not(.has-sidebar-page) #main-outlet {
   box-sizing: border-box;
-  margin-right: 8px;
+  // margin-right: 8px;
 }
 
 /* optional: keep smaller values on very small screens */
 @media screen and (max-width: 599px) {
   body.has-sidebar-page #main-outlet,
   body:not(.has-sidebar-page) #main-outlet {
-    margin-right: 0.75rem;
+    // margin-right: 0.75rem;
   }
 }
 
