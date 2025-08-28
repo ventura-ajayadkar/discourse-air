@@ -32,37 +32,14 @@ body.has-sidebar-page {
   background: linear-gradient(to bottom, transparent, rgb(var(--secondary), 1));
 }
 
-/* Simple right padding for main layout across breakpoints */
-#main-outlet-wrapper {
-  /* default for tablet/desktop/mobile */
-  padding-right: 1rem;
-}
-
-/* Slightly more room on wide screens */
 @media screen and (min-width: 1120px) {
+  /* Add breathing room on the right so #main-outlet isn't flush to the screen edge */
   #main-outlet-wrapper {
     padding-right: 2rem;
   }
-}
 
-/* Less padding on very small phones */
-@media screen and (max-width: 599px) {
-  #main-outlet-wrapper {
-    padding-right: 0.75rem;
-  }
-}
-
-/* If you use a full-width chat layout, keep the padding smaller there */
-.has-full-page-chat #main-outlet.wrap {
-  padding-right: 0.5rem; /* default */
-}
-@media screen and (min-width: 1120px) {
+  /* If you use a full-width chat layout, give a bit less padding there */
   .has-full-page-chat #main-outlet.wrap {
     padding-right: 1rem;
-  }
-}
-@media screen and (max-width: 599px) {
-  .has-full-page-chat #main-outlet.wrap {
-    padding-right: 0.25rem;
   }
 }
