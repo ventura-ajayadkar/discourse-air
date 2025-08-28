@@ -52,15 +52,3 @@ body:not(.has-sidebar-page) #main-outlet {
 .desktop-view .sidebar-footer-wrapper .sidebar-footer-container::before {
   background: linear-gradient(to bottom, transparent, rgb(var(--secondary), 1));
 }
-
-@media screen and (min-width: 1120px) {
-  /* Add breathing room on the right so #main-outlet isn't flush to the screen edge */
-  #main-outlet-wrapper {
-    // padding-right: 2rem;
-  }
-
-  /* If you use a full-width chat layout, give a bit less padding there */
-  .has-full-page-chat #main-outlet.wrap {
-    // padding-right: 1rem;
-  }
-}
