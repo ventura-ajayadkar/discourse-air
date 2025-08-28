@@ -41,13 +41,13 @@ body:not(.has-sidebar-page) #main-outlet {
   margin-right: 8px;
 }
 
-/* optional: keep smaller values on very small screens */
-@media screen and (max-width: 599px) {
-  body.has-sidebar-page #main-outlet,
-  body:not(.has-sidebar-page) #main-outlet {
-    margin-right: 0.75rem;
-  }
-}
+// /* optional: keep smaller values on very small screens */
+// @media screen and (max-width: 599px) {
+//   body.has-sidebar-page #main-outlet,
+//   body:not(.has-sidebar-page) #main-outlet {
+//     margin-right: 0.75rem;
+//   }
+// }
 
 .desktop-view .sidebar-footer-wrapper .sidebar-footer-container::before {
   background: linear-gradient(to bottom, transparent, rgb(var(--secondary), 1));
