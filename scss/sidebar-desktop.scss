@@ -34,20 +34,20 @@ body.has-sidebar-page #main-outlet {
   margin-right: 8px; /* mirror the left padding already used */
 }
 
-// /* If the hamburger toggles a different body class when sidebar is hidden,
-//    add the inverse selector so the right gap still applies. */
-// body:not(.has-sidebar-page) #main-outlet {
-//   box-sizing: border-box;
-//   margin-right: 8px;
-// }
+/* If the hamburger toggles a different body class when sidebar is hidden,
+   add the inverse selector so the right gap still applies. */
+body:not(.has-sidebar-page) #main-outlet {
+  box-sizing: border-box;
+  margin-right: 8px;
+}
 
-// /* optional: keep smaller values on very small screens */
-// @media screen and (max-width: 599px) {
-//   body.has-sidebar-page #main-outlet,
-//   body:not(.has-sidebar-page) #main-outlet {
-//     margin-right: 0.75rem;
-//   }
-// }
+/* optional: keep smaller values on very small screens */
+@media screen and (max-width: 599px) {
+  body.has-sidebar-page #main-outlet,
+  body:not(.has-sidebar-page) #main-outlet {
+    margin-right: 0.75rem;
+  }
+}
 
 .desktop-view .sidebar-footer-wrapper .sidebar-footer-container::before {
   background: linear-gradient(to bottom, transparent, rgb(var(--secondary), 1));
