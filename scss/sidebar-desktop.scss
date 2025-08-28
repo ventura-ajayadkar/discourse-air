@@ -31,7 +31,7 @@ body.has-sidebar-page {
 /* Minimal, reliable right gap for main panel */
 body.has-sidebar-page #main-outlet {
   box-sizing: border-box;
-  margin-right: 8px; /* mirror the left padding already used */
+  // margin-right: 8px; /* mirror the left padding already used */
 }
 
 /* If the hamburger toggles a different body class when sidebar is hidden,
