@@ -254,38 +254,6 @@ div.ac-wrap {
   border-radius: 8px;
   border: 1px solid transparent;
 }
-// Specific overrides for top-right Sign Up / Log In buttons — placed after generic .btn rules
-.d-header-icons {
-  .sign-up-button,
-  .login-button {
-    /* override the generic .btn styles */
-    border-radius: 0.5em; /* replace 8px */
-    padding: 0.28em 0.75em;
-    height: auto;
-    background: var(--primary);
-    color: #fff !important;
-    border: 1px solid rgba(var(--primary-rgb), 0.12);
-    box-shadow: none;
-  }
-
-  .sign-up-button:hover,
-  .login-button:hover {
-    background: rgb(var(--primary-rgb), 0.9);
-    transform: translateY(-1px);
-  }
-
-  /* icon spacing in login button */
-  .login-button .d-icon {
-    margin-right: 0.35em;
-    vertical-align: middle;
-  }
-
-  /* preserve small size */
-  .sign-up-button.btn-small,
-  .login-button.btn-small {
-    font-size: 0.95rem;
-  }
-}
 
 .post-admin-menu.popup-menu {
   .btn.widget-button {
