@@ -1,12 +1,12 @@
 // sidebar
 #main-outlet-wrapper {
   .sidebar-wrapper {
-    margin: 0;
+    margin: 30px 0 50px;
     background-color: var(--secondary);
-    border-radius: 4px; /* optional: reduce radius */
+    border-radius: 8px;
     top: calc(var(--header-offset) + 30px);
     height: calc(100vh - (var(--header-offset) + 80px));
-    box-shadow:none;
+    box-shadow: none;
   }
 
   .sidebar-footer-wrapper {
@@ -16,7 +16,7 @@
 
 body.has-sidebar-page {
   #main-outlet-wrapper {
-    padding-left: 0;
+    padding-left: 8px;
   }
 
   #main-outlet {
@@ -27,14 +27,14 @@ body.has-sidebar-page {
 /* Minimal, reliable right gap for main panel */
 body.has-sidebar-page #main-outlet {
   box-sizing: border-box;
-  margin-right: 0;
+  // margin-right: 8px; /* mirror the left padding already used */
 }
 
 /* If the hamburger toggles a different body class when sidebar is hidden,
    add the inverse selector so the right gap still applies. */
 body:not(.has-sidebar-page) #main-outlet {
   box-sizing: border-box;
-  margin-right: 0;
+  // margin-right: 8px;
 }
 
 /* optional: keep smaller values on very small screens */
