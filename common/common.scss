@@ -291,15 +291,11 @@ html body #main-outlet {
   margin-top: 30px;
   margin-bottom: 50px;
   background: var(--secondary);
-  border-radius: 1em;
+  border-radius: 8px;
   padding: 3em 3em 5%;
   max-width: 1150px;
   padding-bottom: 5% !important; // overriding inline style
-  box-shadow:
-    0 24px 40px rgb(0, 0, 0, 0.07),
-    0 10.8529px 24.1177px rgb(0, 0, 0, 0.0456112),
-    0 4.50776px 10.0172px rgb(0, 0, 0, 0.035),
-    0 1.63037px 3.62304px rgb(0, 0, 0, 0.0243888);
+  box-shadow: none;
 
   @media screen and (width <= 700px) {
     padding: 1.5em;
@@ -400,10 +396,10 @@ html body #main-outlet {
       margin-bottom: 0.5em;
       background-color: var(--secondary);
       border: 1px solid rgb(var(--primary-rgb), 0.2);
-      border-radius: 1em;
+      border-radius: 8px;
       position: relative;
       transition: box-shadow 100ms ease-in-out;
-      box-shadow: 0 0 8px rgb(0, 0, 0, 0.05);
+      box-shadow: none;
       overflow: hidden;
 
       &.visited {
