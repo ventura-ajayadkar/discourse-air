@@ -609,3 +609,38 @@ html body #main-outlet {
     font-size: 0.95em;
   }
 }
+
+.d-header-icons {
+  /* Sign Up: dark background, white text */
+  .sign-up-button {
+    background: #191442 !important;
+    color: #ffffff !important;
+    border: 1px solid transparent !important;
+    border-radius: 0.5em;
+    padding: 0.28em 0.7em;
+  }
+
+  /* Log In: white background, dark text and border */
+  .login-button {
+    background: #ffffff !important;
+    color: #191442 !important;
+    border: 1px solid #191442 !important;
+    border-radius: 0.5em;
+    padding: 0.28em 0.7em;
+  }
+
+  /* Ensure the icon in the login button matches the text color */
+  .login-button .d-icon,
+  .login-button svg {
+    color: #191442 !important;
+    fill: currentColor;
+    margin-right: 0.35em;
+    vertical-align: middle;
+  }
+
+  /* Small hover tweak without large restyling */
+  .sign-up-button:hover,
+  .login-button:hover {
+    opacity: 0.95;
+  }
+}
