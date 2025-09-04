@@ -292,7 +292,7 @@ html body #main-outlet {
   margin-bottom: 50px;
   background: var(--secondary);
   border-radius: 8px;
-  padding: 3em 3em 5%;
+  padding: 3em 16px 5%; /*top: 3em; right: 3em; bottom: 5%; left: 3em.*/
   max-width: 1150px;
   padding-bottom: 5% !important; // overriding inline style
   box-shadow: none;
