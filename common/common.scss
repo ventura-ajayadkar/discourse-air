@@ -290,7 +290,7 @@ html {
 html body #main-outlet {
   margin-top: 30px;
   margin-bottom: 50px;
-  background: #F2F2F7; /* panel background under cards */
+  background: var(--secondary);
   border-radius: 8px;
   padding: 1em 1.5em 5% 1.5em; /*top: 3em; right: 3em; bottom: 5%; left: 3em.*/
   max-width: 1150px;
