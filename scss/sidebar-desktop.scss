@@ -45,6 +45,5 @@ body:not(.has-sidebar-page) #main-outlet {
 }
 
 .desktop-view .sidebar-footer-wrapper .sidebar-footer-container::before {
-  // background: linear-gradient(to bottom, transparent, rgb(var(--secondary), 1));
-  background: #000000;
+  background: linear-gradient(to bottom, transparent, rgb(var(--secondary), 1));
 }
