@@ -1,9 +1,4 @@
-html, body {
-  background-color: #F2F2F7;
-}
-
-// html body.has-full-page-chat #main-outlet {
-body.has-full-page-chat #main-outlet {
+html body.has-full-page-chat #main-outlet {
   width: 100% !important;
   padding: 0 !important;
   background-color: var(--secondary) !important;

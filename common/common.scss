@@ -288,12 +288,7 @@ html {
 }
 
 
-html, body {
-  background-color: #F2F2F7;
-}
-
-// html body #main-outlet {
-#main-outlet {
+html body #main-outlet {
   margin-top: 16px;
   margin-bottom: 66px;
   background: var(--secondary);

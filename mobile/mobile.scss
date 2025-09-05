@@ -46,13 +46,7 @@ html
   margin-inline: auto;
 }
 
-
-html, body {
-  background-color: #F2F2F7;
-}
-
-// html body #main-outlet .docs {
-#main-outlet .docs {
+html body #main-outlet .docs {
   padding: 1em;
   background-color: var(--secondary);
 }
