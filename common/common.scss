@@ -287,7 +287,8 @@ html {
   }
 }
 
-html body #main-outlet {
+// html body #main-outlet {
+#main-outlet {
   margin-top: 16px;
   margin-bottom: 66px;
   background: var(--secondary);
