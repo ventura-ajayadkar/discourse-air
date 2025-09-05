@@ -14,7 +14,6 @@
     border-radius: 8px;
     top: calc(var(--header-offset) + 16px);
     height: calc(100vh - (var(--header-offset) + 80px));
-    max-width: 350px;
     box-shadow: none;
   }
 
@@ -25,7 +24,7 @@
 
 body.has-sidebar-page {
   #main-outlet-wrapper {
-    // padding-left: 32px;
+    padding-left: 32px;
   }
 
   #main-outlet {
