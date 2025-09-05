@@ -5,16 +5,8 @@
 
   /* make wrapper full-bleed but center the inner panels */
   width: 100%;
-  display: flex;
   justify-content: center; /* center the combined main + sidebar block horizontally */
-  align-items: flex-start;  /* vertical alignment of the panels */
-  padding: 0 16px; /* optional small horizontal padding so edges don't touch viewport */
 
-  /* keep the current widths of the main panel and sidebar (don't let flex grow them) */
-  > #main-outlet,
-  > .sidebar-wrapper {
-    flex: 0 0 auto;
-  }
 
   .sidebar-wrapper {
     margin: 16px 0 50px; /* top, right, bottom, left,*/
