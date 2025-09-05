@@ -577,7 +577,7 @@ html body #main-outlet {
       display: inline-block;
       padding: 0.45rem 0.9rem;
       border-radius: 999px; /* pill shape */
-      background: transparent;
+      background: #F8F8F8; /* default state (not hovered/selected) */
       border: 1px solid transparent;
       color: inherit;
       transition: background 120ms, box-shadow 120ms, color 120ms;
@@ -588,7 +588,7 @@ html body #main-outlet {
     > a.active,
     > a:hover,
     &.active > a {
-      background: rgb(var(--primary-rgb), 0.08); /* light accent — tweak as needed */
+      background: #F4F8FF; /* hover/active state */
       color: var(--primary) !important;
       border-color: rgba(var(--primary-rgb), 0.15);
       box-shadow: 0 6px 18px rgba(0,0,0,0.06);
