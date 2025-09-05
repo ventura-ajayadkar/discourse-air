@@ -2,17 +2,16 @@
 #main-outlet-wrapper {
   
   background: #F2F2F7;
-
-  /* make wrapper full-bleed but center the inner panels */
   width: 100%;
   justify-content: center; /* center the combined main + sidebar block horizontally */
+
 
 
   .sidebar-wrapper {
     margin: 16px 0 50px; /* top, right, bottom, left,*/
     background-color: var(--secondary);
     border-radius: 8px;
-    top: calc(var(--header-offset) + 30px);
+    top: calc(var(--header-offset) + 16px);
     height: calc(100vh - (var(--header-offset) + 80px));
     box-shadow: none;
   }
