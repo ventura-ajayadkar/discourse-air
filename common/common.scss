@@ -569,8 +569,8 @@ html body #main-outlet {
 .nav-pills:not(.user-nav) {
   display: flex;
   gap: 12px;
-  justify-content: center; /* center align the pills */
-  align-items: center;
+  justify-content: flex-start; /* remove horizontal centering */
+  align-items: center; /* keep vertical centering */
   flex-wrap: wrap; /* allow wrapping and keep centered on small widths */
 
   > li {
