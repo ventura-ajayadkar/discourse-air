@@ -1,8 +1,16 @@
 // sidebar
 #main-outlet-wrapper {
-
+  /* existing rules */
   background: #F2F2F7;
-  
+
+  /* new: make wrapper occupy all available width */
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding-left: 0; /* remove left gap; adjust if you want horizontal padding */
+  padding-right: 0;
+
   .sidebar-wrapper {
     margin: 30px 0 50px; /* top, right, bottom, left,*/
     background-color: var(--secondary);
@@ -48,4 +56,11 @@ body:not(.has-sidebar-page) #main-outlet {
 
 .desktop-view .sidebar-footer-wrapper .sidebar-footer-container::before {
   background: linear-gradient(to bottom, transparent, rgb(var(--secondary), 1));
+}
+
+/* ensure main outlet itself stretches */
+#main-outlet {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
