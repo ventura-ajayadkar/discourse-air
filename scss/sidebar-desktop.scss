@@ -1,13 +1,6 @@
 // sidebar
 #main-outlet-wrapper {
   
-  background: #F2F2F7;
-  width: 100%;
-  display: flex;
-  justify-content: center; /* center the combined main + sidebar block horizontally */
-  padding: 0 16px;
-
-
   .sidebar-wrapper {
     margin: 16px 0 50px; /* top, right, bottom, left,*/
     background-color: var(--secondary);
