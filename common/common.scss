@@ -577,20 +577,20 @@ html body #main-outlet {
       display: inline-block;
       padding: 0.45rem 0.9rem;
       border-radius: 999px; /* pill shape */
-      background: #F8F8F8; /* default state (not hovered/selected) */
-      border: 1px solid transparent;
+      background: #F8F8F8; /* default state */
+      border: 1px solid #E0DFE7; /* enforced border color */
       color: inherit;
       transition: background 120ms, box-shadow 120ms, color 120ms;
       text-decoration: none;
     }
 
-    /* active / hover state: pill background + subtle border/shadow */
+    /* active / hover state: pill background + same border */
     > a.active,
     > a:hover,
     &.active > a {
       background: #F4F8FF; /* hover/active state */
       color: var(--primary) !important;
-      border-color: rgba(var(--primary-rgb), 0.15);
+      border: 1px solid #ACC8F9; /* keep same border color when active/hover */
       box-shadow: 0 6px 18px rgba(0,0,0,0.06);
       text-decoration: none;
     }
