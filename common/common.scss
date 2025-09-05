@@ -568,7 +568,7 @@ html body #main-outlet {
 /* Tabs: rounded pill button instead of underline */
 .nav-pills:not(.user-nav) {
   display: flex;
-  gap: 0.5rem;
+  gap: 12px;
   justify-content: center; /* center align the pills */
   align-items: center;
   flex-wrap: wrap; /* allow wrapping and keep centered on small widths */
@@ -578,7 +578,8 @@ html body #main-outlet {
 
     > a {
       display: inline-block;
-      padding: 0.45rem 0.9rem;
+      /* increased padding for a bit more breathing room */
+      padding: 0.65rem 1.05rem;
       border-radius: 999px; /* pill shape */
       background: #F8F8F8; /* default state */
       border: 1px solid #E0DFE7; /* enforced border color */
@@ -608,7 +609,7 @@ html body #main-outlet {
 /* Optional: slightly smaller pills on small screens */
 @media screen and (max-width: 599px) {
   .nav-pills:not(.user-nav) > li > a {
-    padding: 0.35rem 0.6rem;
+    padding: 0.5rem 0.8rem;
     font-size: 0.95em;
   }
 }
