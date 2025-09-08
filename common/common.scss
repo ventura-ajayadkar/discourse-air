@@ -615,17 +615,14 @@ html body #main-outlet {
   }
 }
 
-/* Small, specific overrides for header / login-page / signup-page buttons */
+/* Small, specific overrides for header Sign Up / Log In buttons */
 .header-buttons .auth-buttons,
-.login-page-cta__buttons,
-.signup-page-cta__buttons {
+.login-page-cta__buttons {
   /* shared text styles + 8px internal padding */
   .sign-up-button,
   .login-button,
   .login-page-cta__signup,
-  .login-page-cta__login,
-  .signup-page-cta__signup,
-  .signup-page-cta__login {
+  .login-page-cta__login {
     font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     font-weight: 600; /* Semi Bold */
     font-style: normal;
@@ -643,68 +640,79 @@ html body #main-outlet {
     border-radius: 8px;
     border: 1px solid #191442;
     box-shadow: none;
-    transition: none !important; /* disable transitions */
   }
 
   /* Sign Up: dark background, white text */
   .sign-up-button,
-  .login-page-cta__signup,
-  .signup-page-cta__signup {
-    background: #191442 !important;
+  .login-page-cta__signup {
+    background: #191442;
     color: #FFFFFF !important;
-    border-color: #191442 !important;
+    border-color: #191442;
   }
 
   /* Log In: white background, text & border in dark color */
   .login-button,
-  .login-page-cta__login,
-  .signup-page-cta__login {
-    background: #FFFFFF !important;
+  .login-page-cta__login {
+    background: #FFFFFF;
     color: #191442 !important;
-    border-color: #191442 !important;
+    border-color: #191442;
   }
 
-  /* hide header login icon only (keeps page CTA buttons untouched) */
+  /* hide header login icon only (keeps new-page buttons untouched) */
   .login-button {
     .d-icon,
     svg {
       display: none !important;
     }
+
     gap: 0;
   }
 
-  /* Force-disable hover/active/focus visuals for all targeted buttons - explicit values */
-  button.sign-up-button,
-  button.login-page-cta__signup,
-  button.signup-page-cta__signup {
-    /* base ensured */
-    background: #191442 !important;
-    color: #FFFFFF !important;
-    border-color: #191442 !important;
+  /* Remove hover/active effects for header and login-page buttons */
+  .sign-up-button,
+  .login-button,
+  .login-page-cta__signup,
+  .login-page-cta__login {
     transition: none !important;
-    box-shadow: none !important;
   }
 
-  button.login-button,
-  button.login-page-cta__login,
-  button.signup-page-cta__login {
-    background: #FFFFFF !important;
-    color: #191442 !important;
-    border-color: #191442 !important;
-    transition: none !important;
+  /* neutralize hover/active states */
+  .sign-up-button:hover,
+  .login-button:hover,
+  .login-page-cta__signup:hover,
+  .login-page-cta__login:hover,
+  .sign-up-button:active,
+  .login-button:active,
+  .login-page-cta__signup:active,
+  .login-page-cta__login:active,
+  .sign-up-button:focus,
+  .login-button:focus,
+  .login-page-cta__signup:focus,
+  .login-page-cta__login:focus {
+    opacity: 1 !important;
+    transform: none !important;
     box-shadow: none !important;
   }
+}
 
-  /* Explicit hover/focus/active that exactly matches base state */
+/* Force-disable hover/active/focus visuals for header + login-page CTA buttons */
+.header-buttons .auth-buttons,
+.login-page-cta__buttons {
+  /* make sure transitions aren't causing visual changes */
+  .sign-up-button,
+  .login-button,
+  .login-page-cta__signup,
+  .login-page-cta__login {
+    transition: none !important;
+  }
+
+  /* explicit override for Sign Up (dark) */
   button.sign-up-button:hover,
   button.sign-up-button:focus,
   button.sign-up-button:active,
   button.login-page-cta__signup:hover,
   button.login-page-cta__signup:focus,
-  button.login-page-cta__signup:active,
-  button.signup-page-cta__signup:hover,
-  button.signup-page-cta__signup:focus,
-  button.signup-page-cta__signup:active {
+  button.login-page-cta__signup:active {
     background: #191442 !important;
     color: #FFFFFF !important;
     border-color: #191442 !important;
@@ -713,15 +721,13 @@ html body #main-outlet {
     opacity: 1 !important;
   }
 
+  /* explicit override for Log In (white) */
   button.login-button:hover,
   button.login-button:focus,
   button.login-button:active,
   button.login-page-cta__login:hover,
   button.login-page-cta__login:focus,
-  button.login-page-cta__login:active,
-  button.signup-page-cta__login:hover,
-  button.signup-page-cta__login:focus,
-  button.signup-page-cta__login:active {
+  button.login-page-cta__login:active {
     background: #FFFFFF !important;
     color: #191442 !important;
     border-color: #191442 !important;
