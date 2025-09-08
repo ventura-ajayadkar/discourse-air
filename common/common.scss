@@ -616,10 +616,13 @@ html body #main-outlet {
 }
 
 /* Small, specific overrides for header Sign Up / Log In buttons */
-.header-buttons .auth-buttons {
+.header-buttons .auth-buttons,
+.login-page-cta__buttons {
   /* shared text styles + 8px internal padding */
   .sign-up-button,
-  .login-button {
+  .login-button,
+  .login-page-cta__signup,
+  .login-page-cta__login {
     font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     font-weight: 600; /* Semi Bold */
     font-style: normal;
@@ -627,43 +630,49 @@ html body #main-outlet {
     line-height: 1;
     text-transform: none;
 
-    /* new padding requested */
+    /* internal padding as requested */
     padding: 8px;
 
-    /* ensure icon + label align nicely */
+    /* ensure label alignment */
     display: inline-flex;
     align-items: center;
     gap: 8px;
-  }
-
-  .sign-up-button {
-    background: #191442;
-    color: #FFFFFF !important;
     border-radius: 8px;
     border: 1px solid #191442;
     box-shadow: none;
   }
 
+  /* Sign Up: dark background, white text */
+  .sign-up-button,
+  .login-page-cta__signup {
+    background: #191442;
+    color: #FFFFFF !important;
+    border-color: #191442;
+  }
+
+  /* Log In: white background, text & border in dark color */
+  .login-button,
+  .login-page-cta__login {
+    background: #FFFFFF;
+    color: #191442 !important;
+    border-color: #191442;
+  }
+
+  /* hide header login icon only (keeps new-page buttons untouched) */
   .login-button {
-    /* hide the svg/icon */
     .d-icon,
     svg {
       display: none !important;
     }
 
-    /* remove gap reserved for icon */
     gap: 0;
-
-    background: #FFFFFF;
-    color: #191442 !important;
-    border-radius: 8px;
-    border: 1px solid #191442;
-    box-shadow: none;
   }
 
   /* Optional hover feedback */
   .sign-up-button:hover,
-  .login-button:hover {
+  .login-button:hover,
+  .login-page-cta__signup:hover,
+  .login-page-cta__login:hover {
     opacity: 0.95;
     transform: translateY(-1px);
   }
