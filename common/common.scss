@@ -673,28 +673,58 @@ html body #main-outlet {
     gap: 0;
   }
 
-  /* Force-disable hover/active/focus visuals for all targeted buttons */
+  /* Force-disable hover/active/focus visuals for all targeted buttons - explicit values */
+  button.sign-up-button,
+  button.login-page-cta__signup,
+  button.signup-page-cta__signup {
+    /* base ensured */
+    background: #191442 !important;
+    color: #FFFFFF !important;
+    border-color: #191442 !important;
+    transition: none !important;
+    box-shadow: none !important;
+  }
+
+  button.login-button,
+  button.login-page-cta__login,
+  button.signup-page-cta__login {
+    background: #FFFFFF !important;
+    color: #191442 !important;
+    border-color: #191442 !important;
+    transition: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Explicit hover/focus/active that exactly matches base state */
   button.sign-up-button:hover,
   button.sign-up-button:focus,
   button.sign-up-button:active,
-  button.login-button:hover,
-  button.login-button:focus,
-  button.login-button:active,
   button.login-page-cta__signup:hover,
   button.login-page-cta__signup:focus,
   button.login-page-cta__signup:active,
+  button.signup-page-cta__signup:hover,
+  button.signup-page-cta__signup:focus,
+  button.signup-page-cta__signup:active {
+    background: #191442 !important;
+    color: #FFFFFF !important;
+    border-color: #191442 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  button.login-button:hover,
+  button.login-button:focus,
+  button.login-button:active,
   button.login-page-cta__login:hover,
   button.login-page-cta__login:focus,
   button.login-page-cta__login:active,
-  button.signup-page-cta__signup:hover,
-  button.signup-page-cta__signup:focus,
-  button.signup-page-cta__signup:active,
   button.signup-page-cta__login:hover,
   button.signup-page-cta__login:focus,
   button.signup-page-cta__login:active {
-    background: inherit !important;
-    color: inherit !important;
-    border-color: inherit !important;
+    background: #FFFFFF !important;
+    color: #191442 !important;
+    border-color: #191442 !important;
     box-shadow: none !important;
     transform: none !important;
     opacity: 1 !important;
