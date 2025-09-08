@@ -617,27 +617,48 @@ html body #main-outlet {
 
 /* Small, specific overrides for header Sign Up / Log In buttons */
 .header-buttons .auth-buttons {
+  /* shared text styles + 8px internal padding */
+  .sign-up-button,
+  .login-button {
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-weight: 600; /* Semi Bold */
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: none;
+
+    /* new padding requested */
+    padding: 8px;
+
+    /* ensure icon + label align nicely */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
   .sign-up-button {
     background: #191442;
     color: #FFFFFF !important;
     border-radius: 8px;
     border: 1px solid #191442;
-    padding: 0.28em 0.75em;
     box-shadow: none;
   }
 
   .login-button {
+    /* hide the svg/icon */
+    .d-icon,
+    svg {
+      display: none !important;
+    }
+
+    /* remove gap reserved for icon */
+    gap: 0;
+
     background: #FFFFFF;
     color: #191442 !important;
     border-radius: 8px;
     border: 1px solid #191442;
-    padding: 0.28em 0.75em;
     box-shadow: none;
-
-    .d-icon {
-      color: #191442;
-      margin-right: 0.35em;
-    }
   }
 
   /* Optional hover feedback */
