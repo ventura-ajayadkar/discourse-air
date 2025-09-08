@@ -694,3 +694,45 @@ html body #main-outlet {
     box-shadow: none !important;
   }
 }
+
+/* Force-disable hover/active/focus visuals for header + login-page CTA buttons */
+.header-buttons .auth-buttons,
+.login-page-cta__buttons {
+  /* make sure transitions aren't causing visual changes */
+  .sign-up-button,
+  .login-button,
+  .login-page-cta__signup,
+  .login-page-cta__login {
+    transition: none !important;
+  }
+
+  /* explicit override for Sign Up (dark) */
+  button.sign-up-button:hover,
+  button.sign-up-button:focus,
+  button.sign-up-button:active,
+  button.login-page-cta__signup:hover,
+  button.login-page-cta__signup:focus,
+  button.login-page-cta__signup:active {
+    background: #191442 !important;
+    color: #FFFFFF !important;
+    border-color: #191442 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  /* explicit override for Log In (white) */
+  button.login-button:hover,
+  button.login-button:focus,
+  button.login-button:active,
+  button.login-page-cta__login:hover,
+  button.login-page-cta__login:focus,
+  button.login-page-cta__login:active {
+    background: #FFFFFF !important;
+    color: #191442 !important;
+    border-color: #191442 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
