@@ -668,12 +668,29 @@ html body #main-outlet {
     gap: 0;
   }
 
-  /* Optional hover feedback */
+  /* Remove hover/active effects for header and login-page buttons */
+  .sign-up-button,
+  .login-button,
+  .login-page-cta__signup,
+  .login-page-cta__login {
+    transition: none !important;
+  }
+
+  /* neutralize hover/active states */
   .sign-up-button:hover,
   .login-button:hover,
   .login-page-cta__signup:hover,
-  .login-page-cta__login:hover {
-    opacity: 0.95;
-    transform: translateY(-1px);
+  .login-page-cta__login:hover,
+  .sign-up-button:active,
+  .login-button:active,
+  .login-page-cta__signup:active,
+  .login-page-cta__login:active,
+  .sign-up-button:focus,
+  .login-button:focus,
+  .login-page-cta__signup:focus,
+  .login-page-cta__login:focus {
+    opacity: 1 !important;
+    transform: none !important;
+    box-shadow: none !important;
   }
 }
