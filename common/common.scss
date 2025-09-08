@@ -736,3 +736,54 @@ html body #main-outlet {
     opacity: 1 !important;
   }
 }
+
+/* Signup page CTA only — independent from header/login rules */
+.signup-page-cta__buttons {
+  /* base for both buttons */
+  button.signup-page-cta__signup,
+  button.signup-page-cta__login {
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #191442;
+    box-shadow: none;
+    transition: none !important;
+  }
+
+  /* Sign Up: dark background */
+  button.signup-page-cta__signup {
+    background: #191442 !important;
+    color: #FFFFFF !important;
+  }
+
+  /* Log In: white background, dark text */
+  button.signup-page-cta__login {
+    background: #FFFFFF !important;
+    color: #191442 !important;
+  }
+
+  /* Explicitly neutralize hover/focus/active for these page buttons */
+  button.signup-page-cta__signup:hover,
+  button.signup-page-cta__signup:focus,
+  button.signup-page-cta__signup:active,
+  button.signup-page-cta__login:hover,
+  button.signup-page-cta__login:focus,
+  button.signup-page-cta__login:active {
+    background: initial !important;
+    color: initial !important;
+    border-color: #191442 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
