@@ -296,6 +296,16 @@ div.ac-wrap {
   border-top-right-radius: var(--d-border-radius-large);
 }
 
+#reply-control .save-or-cancel .btn-primary {
+  flex: 0 0 auto;
+  /* match the dark theme color used above */
+  background: #191442 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #191442 !important;
+  border-radius: 8px;
+  box-shadow: none !important;
+  transition: none !important;
+}
 
 html {  
   body:not(.no-ember) {
