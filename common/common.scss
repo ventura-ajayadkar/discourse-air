@@ -23,6 +23,19 @@
   max-width: 600px;
 }
 
+.select-kit.single-select.is-expanded .select-kit-header:not(.btn),
+.select-kit.single-select .select-kit-header:not(.btn):focus,
+.select-kit.single-select .select-kit-header:not(.btn):active {
+  /* enforce the requested border width and color */
+  border-style: solid !important;
+  border-width: 0.5px !important;
+  border-color: #7260E2 !important;
+
+  /* keep the existing focus outline but match the color */
+  outline: 2px solid #7260E2 !important;
+  outline-offset: -2px;
+}
+
 // custom search banner customizations
 .custom-search-banner-wrap {
   margin: 0 auto !important;
