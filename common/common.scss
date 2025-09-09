@@ -79,16 +79,6 @@
   background: transparent !important;
 }
 
-/* ensure hover/focus/active do not change the color */
-#topic-footer-buttons .topic-footer-main-buttons .create:hover,
-#topic-footer-buttons .topic-footer-main-buttons .create:focus,
-#topic-footer-buttons .topic-footer-main-buttons .create:active {
-  color: #191442 !important;
-  border-color: #191442 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
 // custom search banner customizations
 .custom-search-banner-wrap {
   margin: 0 auto !important;
