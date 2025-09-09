@@ -33,6 +33,24 @@
   outline: none !important;
 }
 
+/* non-selected (default) state for single-select header */
+.select-kit.single-select .select-kit-header:not(.btn) {
+  border-style: solid !important;
+  border-width: 0.5px !important;
+  border-color: #E0DFE7 !important; /* requested default border color */
+  border-radius: 8px !important;
+
+  /* keep same padding as focus/active */
+  padding-top: 4px !important;
+  padding-right: 8px !important;
+  padding-bottom: 4px !important;
+  padding-left: 8px !important;
+
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* existing focused/active rule follows */
 .select-kit.single-select.is-expanded .select-kit-header:not(.btn),
 .select-kit.single-select .select-kit-header:not(.btn):focus,
 .select-kit.single-select .select-kit-header:not(.btn):active {
