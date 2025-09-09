@@ -1,5 +1,12 @@
 @use "lib/viewport";
 
+
+#main > div {
+  display: flex;
+  flex-direction: column;
+  background: var(--secondary) !important;
+}
+
 // custom search banner customizations
 .custom-search-banner-wrap {
   margin: 0 auto !important;
