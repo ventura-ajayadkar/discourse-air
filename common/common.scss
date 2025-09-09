@@ -27,7 +27,7 @@
   /* enforce requested sizing and shape */
   border: 0.5px solid #E0DFE7 !important;
   border-radius: 8px !important;
-  padding: 8px !important;
+  padding: 0 8px !important; /* left/right 8px, top/bottom 0 */
   /* ensure no conflicting shadow/outline from other rules */
   box-shadow: none !important;
   outline: none !important;
