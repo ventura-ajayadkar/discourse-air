@@ -107,16 +107,6 @@
   padding: 15px 5px;
 }
 
-.table-heading {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  font-weight: 600; /* Semi Bold */
-  font-style: normal;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #282828;
-  border-bottom: 0.5px solid #E0DFE7 !important;
-}
-
 .navigation-topics .topic-list .topic-list-body .topic-list-data,
 .navigation-topics .topic-list .topic-list-header .topic-list-data {
   flex: unset;
@@ -286,6 +276,16 @@ div.ac-wrap {
 
 .timeline-container .topic-timeline .timeline-scrollarea {
   border-left-color: var(--tertiary);
+}
+
+.table-heading {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-weight: 600; /* Semi Bold */
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #282828;
+  border-bottom: 0.5px solid #E0DFE7 !important;
 }
 
 html {  
