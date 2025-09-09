@@ -107,6 +107,10 @@
   padding: 15px 5px;
 }
 
+.table-heading {
+  border-bottom: 0.5px solid #E0DFE7 !important;
+}
+
 .navigation-topics .topic-list .topic-list-body .topic-list-data,
 .navigation-topics .topic-list .topic-list-header .topic-list-data {
   flex: unset;
