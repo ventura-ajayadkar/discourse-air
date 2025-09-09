@@ -23,6 +23,16 @@
   max-width: 600px;
 }
 
+.select-kit.single-select .select-kit-filter.is-expanded {
+  /* enforce requested sizing and shape */
+  border: 0.5px solid #E0DFE7 !important;
+  border-radius: 8px !important;
+  padding: 8px !important;
+  /* ensure no conflicting shadow/outline from other rules */
+  box-shadow: none !important;
+  outline: none !important;
+}
+
 .select-kit.single-select.is-expanded .select-kit-header:not(.btn),
 .select-kit.single-select .select-kit-header:not(.btn):focus,
 .select-kit.single-select .select-kit-header:not(.btn):active {
