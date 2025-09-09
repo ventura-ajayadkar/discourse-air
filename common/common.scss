@@ -7,6 +7,22 @@
   background: var(--secondary) !important;
 }
 
+.select-kit.is-expanded .select-kit-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* overrides requested */
+  padding: 8px;
+  border-radius: 12px;
+
+  border: 1px solid var(--content-border-color);
+  box-shadow: 0px 0px 10px 0px #0000001A;
+  background: var(--secondary);
+  max-width: 600px;
+}
+
 // custom search banner customizations
 .custom-search-banner-wrap {
   margin: 0 auto !important;
