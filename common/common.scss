@@ -672,7 +672,7 @@ html body #main-outlet {
       background: #F4F8FF; /* hover/active state */
       color: var(--primary) !important;
       border: 1px solid #ACC8F9; /* keep same border color when active/hover */
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      /* box-shadow: 0 6px 18px rgba(0,0,0,0.06); */ /* shadow commented out */
       text-decoration: none;
     }
 
