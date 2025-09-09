@@ -2,7 +2,7 @@
 #main-outlet-wrapper {
   
   background: var(--secondary);
-  
+
   .sidebar-wrapper {
     margin: 16px 0 50px; /* top, right, bottom, left,*/
     background-color: var(--secondary);
@@ -15,6 +15,18 @@
   .sidebar-footer-wrapper {
     background: var(--secondary);
   }
+}
+
+#main-outlet-wrapper.wrap {
+  background: var(--secondary);
+}
+
+#main-outlet-wrapper.wrap .sidebar-wrapper {
+  background: var(--secondary);
+}
+
+#main-outlet-wrapper.wrap .sidebar-footer-wrapper {
+  background: var(--secondary);
 }
 
 body.has-sidebar-page {
