@@ -112,6 +112,12 @@
   flex: unset;
 }
 
+.navigation-categories .navigation-container,
+  .categories-list .navigation-container {
+    border-bottom: 0.5px solid #E0DFE7 !important;
+    background-color: #E0DFE7;
+}
+
 .badge-wrapper.box {
   border-radius: 0.25em;
   overflow: hidden;
